@@ -22,7 +22,6 @@ def within_board(y, x):
     return (y <= 7 and y >= 0 and x <= 7 and x >= 0)
     
 def is_bounded(board, y_end, x_end, length, d_y, d_x):
-    colour = board[y_end][x_end]
     bounds = 0
     #Test each side of sequence
     #Since y_end and x_end represent the end of the sequence, 
@@ -101,7 +100,7 @@ def detect_row(board, col, y_start, x_start, length, d_y, d_x):
             open_seq_count += 1
         elif is_bounded(board, sequences[i][0], sequences[i][1], length, d_y, d_x) == "SEMIOPEN":
             semi_open_seq_count += 1
-
+    
     return open_seq_count, semi_open_seq_count
     
 def detect_rows(board, col, length):

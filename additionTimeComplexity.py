@@ -28,8 +28,9 @@ for i in range(n):
 #                                         O(log(x)) where x is the larger number
 #except for integers, all numerical variables in python are limited in magnitude
 
-#addition, multiplication of floats: can take to be a constant
+#addition and multiplication of floats: we can assume that it's constant as it depends on the user's hardware
 
 #Complexity of Multiplication
 #the long multiplication algorithm: O(n^2) where n is the number of digits of the largeer number
-#Karatsuba's algorithm O(
+#however, long multiplication is not actually the most efficient. Karatsuba's algorithem 
+#Karatsuba's algorithm O(n^1.6) is better.

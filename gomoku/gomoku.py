@@ -38,7 +38,7 @@ def is_bounded(board, y_end, x_end, length, d_y, d_x):
     #after the exisitng end.
     if not within_board(y_end - (d_y * length), x_end - (d_x * length)):
         bounds += 1
-    elif board[y_end - (d_y * length)][x_end - (d_y * length)] != " ":
+    elif board[y_end - (d_y * length)][x_end - (d_x * length)] != " ":
         bounds += 1
     
     #now that we have checked both sides of the pattern and determined the bounds.

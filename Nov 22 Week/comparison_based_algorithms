@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 27 13:39:24 2020
+
+@author: jwoo
+"""
+
+#Comparison-based Algorithms
+
+#The idea is that comparison based algorithms cannot do better than 
+#O(nlog(n))`
+
+#Decisions about how to arrange the sorted version of the list are based on 
+#code in the format:
+#if L[i] < L[j]:
+#   ......
+#else:
+#   ......
+#
+#In total, for a given len(L) = n, we have n! possible solutions to the 
+#problem of sorting the list L. 
+
+#if statement 1:
+#ideally narrow down the possible solutions to n!/2
+#if statement 2:
+#ideally narrow down the possible solutions to n!/4
+
+#...
+
+#log2(n!) if statements to narrow down the space of possible solutions to 1
+#Stirling's approximation: log2(n!) = O(nlog(n))

@@ -118,6 +118,10 @@ def share_n1(M1,M2):
     #         if M2_column[i] == M1_column[e]:
     #             counter += 1
 
+    #############################################################################
+    #
+    #for i in range(6):
+        #M.append([0] * 5)
 
 if __name__ == "__main__":
     print(match("defa","abcdef"))

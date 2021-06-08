@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jwoo/Desktop/ttq4/intset.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+intset.h
+/Users/jwoo/Desktop/ttq4/intset.h
+
+/Users/jwoo/Desktop/ttq4/intset.h
+

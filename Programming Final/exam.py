@@ -25,7 +25,7 @@ def most_common_frequent_word(files):
         text = text.lower()
 
         #now we split on spaces to make a list of words
-        text = text.split(" ")
+        text = text.split()
 
         #Now add all text to a dictionary, each unique word is a new key
         for word in text:
